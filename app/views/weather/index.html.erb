@@ -1,0 +1,12 @@
+<h1>Weather App</h1>
+
+<form>
+  <label for="long">Longitude</label>
+  <input type="text" name="long">
+  <label for="lat">Latitude</label>
+  <input type="text" name="lat">
+</form>
+
+<%= form_tag("www.google.com") do -%>
+  <%= submit_tag 'Get Weather' %>
+<% end -%>

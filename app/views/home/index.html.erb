@@ -1,0 +1,16 @@
+<div class="grid justify-items-center">
+  <p>Enter your Latitude and Longitude to see the weather</p>
+</div>
+
+</br>
+
+<div class="w-full text-center">
+  <%= form_tag('/weather', method: 'GET') do |form| %> 
+    <label>Latitude</label>
+    <input type="text" name="lat">
+    <label>Longitude</label>
+    <input type="text" name="lon">
+    </br></br>
+    <%= submit_tag "Find your weather", style: "border: solid;border-radius: 10px;padding: 3px;" %>
+  <% end %>
+</div>
