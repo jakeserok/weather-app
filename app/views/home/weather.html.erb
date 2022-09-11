@@ -1,4 +1,5 @@
 <div class="w-full text-center">
+  <p><%= @city %></p>
   <%= Date.today.strftime('%A, %B %d') %>
   <%= image_tag("http://openweathermap.org/img/wn/#{@data_weather['icon']}@2x.png", class: "mx-auto")%>
   <p>Current Temp: <%= @data['main']['temp'] %></p>
